@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="child" class="com.linkedbear.spring.bean.a_type.bean.Child"/>
+
+    <bean id="toyFactory" class="com.linkedbear.spring.bean.a_type.bean.ToyFactoryBean">
+        <property name="child" ref="child"/>
+    </bean>
+</beans>

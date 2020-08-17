@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="com.linkedbear.spring.bean.c_instantiate.bean.BallFactoryBean"/>
+
+
+    <bean id="car1" class="com.linkedbear.spring.bean.c_instantiate.bean.Car"/>
+
+    <bean id="car2" class="com.linkedbear.spring.bean.c_instantiate.bean.CarStaticFactory" factory-method="getCar"/>
+
+    <bean id="carInstanceFactory" class="com.linkedbear.spring.bean.c_instantiate.bean.CarInstanceFactory"/>
+    <bean id="car3" factory-bean="carInstanceFactory" factory-method="getCar"/>
+</beans>
