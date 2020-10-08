@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="ball" class="com.linkedbear.spring.postprocessor.e_instantiation.bean.Ball">
+        <property name="id" value="123456"/>
+    </bean>
+
+    <bean id="ball2" class="com.linkedbear.spring.postprocessor.e_instantiation.bean.Ball"/>
+
+    <bean class="com.linkedbear.spring.postprocessor.e_instantiation.config.BallFactoryInstantiationProcessor"/>
+
+</beans>
