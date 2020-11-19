@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE aspectj PUBLIC "-//AspectJ//DTD//EN" "http://www.eclipse.org/aspectj/dtd/aspectj.dtd">
+<aspectj>
+    <!-- 要织入切面的目标类 -->
+    <weaver>
+        <include within="com.linkedbear.spring.aop.g_weaving..*"/>
+    </weaver>
+    <!-- 切面类 -->
+    <aspects>
+        <aspect name="com.linkedbear.spring.aop.g_weaving.aspect.LogAspect"/>
+    </aspects>
+</aspectj>
