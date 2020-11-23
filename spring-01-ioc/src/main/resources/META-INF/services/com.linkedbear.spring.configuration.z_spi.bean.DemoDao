@@ -1,0 +1,2 @@
+com.linkedbear.spring.configuration.z_spi.bean.DemoMySQLDaoImpl
+com.linkedbear.spring.configuration.z_spi.bean.DemoOracleDaoImpl

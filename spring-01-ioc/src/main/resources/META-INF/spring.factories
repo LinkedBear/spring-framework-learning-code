@@ -1,0 +1,13 @@
+com.linkedbear.spring.configuration.z_spi.bean.DemoDao=\
+  com.linkedbear.spring.configuration.z_spi.bean.DemoMySQLDaoImpl,\
+  com.linkedbear.spring.configuration.z_spi.bean.DemoOracleDaoImpl
+
+com.linkedbear.spring.configuration.e_enablejdbc.config.EnableJdbc=\
+  com.linkedbear.spring.configuration.e_enablejdbc.config.MySQLJdbcConfiguration,\
+  com.linkedbear.spring.configuration.e_enablejdbc.config.OracleJdbcConfiguration,\
+  com.linkedbear.spring.configuration.e_enablejdbc.config.H2JdbcConfiguration
+
+java.sql.Driver=\
+  com.mysql.jdbc.Driver,\
+  oracle.jdbc.driver.OracleDriver,\
+  org.h2.Driver
