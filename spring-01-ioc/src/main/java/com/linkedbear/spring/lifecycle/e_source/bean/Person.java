@@ -32,8 +32,8 @@ public class Person implements InitializingBean, DisposableBean, Lifecycle {
     }
     
     @PreDestroy
-    public void preDestory() {
-        System.out.println("Person @PostConstruct run ......");
+    public void preDestroy() {
+        System.out.println("Person @PreDestroy run ......");
     }
     
     @Override
