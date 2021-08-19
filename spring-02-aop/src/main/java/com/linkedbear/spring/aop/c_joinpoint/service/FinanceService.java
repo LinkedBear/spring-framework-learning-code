@@ -1,9 +1,9 @@
 package com.linkedbear.spring.aop.c_joinpoint.service;
 
 import com.linkedbear.spring.aop.c_joinpoint.component.Log;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 public class FinanceService {
     
     public void addMoney(double money) {
