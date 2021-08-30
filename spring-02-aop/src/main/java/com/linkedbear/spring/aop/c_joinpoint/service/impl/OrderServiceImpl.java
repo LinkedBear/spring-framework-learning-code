@@ -1,12 +1,12 @@
 package com.linkedbear.spring.aop.c_joinpoint.service.impl;
 
 import com.linkedbear.spring.aop.c_joinpoint.service.OrderService;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
 import java.util.List;
 
-@Component
+@Service
 public class OrderServiceImpl implements OrderService {
     
     @Override
